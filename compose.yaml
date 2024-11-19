@@ -1,0 +1,13 @@
+services:
+  spring_app:
+    build: .
+    ports:
+      - "9090:9090"
+    networks:
+      - "myfirstnet"
+    volumes:
+      - "myfirstvol:/app"
+networks:
+  myfirstnet:
+volumes:
+  myfirstvol:
